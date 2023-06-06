@@ -28,17 +28,10 @@ return {
     },
   },
   {
-    "iamcco/markdown-preview.nvim",
+    "akinsho/git-conflict.nvim",
     event = "User Astrofile",
-    run = function() vim.fn["mkdp#util#install"]() end,
-    config = function() require("markdown-preview.nvim").setup() end,
-    opts = {},
-    keys = {
-      {
-        "<leader>P",
-        "<cmd>MarkdownPreview<cr>",
-      },
-    },
+    version = "*",
+    config = true,
   },
   -- "andweeb/presence.nvim",
   -- {
